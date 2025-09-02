@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — SWE Portfolio</title>
+  <meta name="description" content="Your Name — CS Master's student, backend & ML-focused SWE." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Open Graph (nicer link previews) -->
+  <meta property="og:title" content="Your Name — SWE Portfolio" />
+  <meta property="og:description" content="Backend (Python/Java), data/ML, and full-stack projects." />
+</head>
+<body>
+  <header class="container">
+    <h1>Your Name</h1>
+    <p class="tagline">CS M.S. @ University • Backend (Python/Java) • ML/AI • Full-stack</p>
+    <nav class="links">
+      <a href="mailto:you@email.com">Email</a>
+      <a href="https://github.com/your-username" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="/assets/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Summary -->
+    <section>
+      <h2>About</h2>
+      <p>
+        Master’s in CS (Graduating May 2026). Interests: backend systems, data/ML, and
+        pragmatic full-stack. Comfortable with <strong>Python</strong>, <strong>Java</strong>,
+        and working knowledge of <strong>JavaScript/TypeScript</strong>. Recently focused on
+        concurrency, system design basics, and CodeSignal prep.
+      </p>
+    </section>
+
+    <!-- Projects (show 3; tight bullets with outcomes) -->
+    <section>
+      <h2>Projects</h2>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>SmileSnap — photo classifier & gallery</h3>
+          <div class="badges">
+            <span>Python</span><span>Flask</span><span>Postgres</span><span>AWS S3</span>
+          </div>
+        </div>
+        <p class="muted">
+          Uploads images, classifies smiles (OpenCV/ML), stores metadata, and serves a smart gallery.
+          Added signed-URL uploads and async workers; reduced p95 upload latency by 35%.
+        </p>
+        <p>
+          <a href="https://github.com/your-username/smilesnap" target="_blank" rel="noreferrer">GitHub</a>
+          · <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>AlgoGym — CodeSignal practice tracker</h3>
+          <div class="badges">
+            <span>React</span><span>TypeScript</span><span>Firebase</span>
+          </div>
+        </div>
+        <p class="muted">
+          Tracks daily drills, patterns, and mock OA scores; spaced-repetition reminders.
+          Increased daily streak from 0→14 days; added CSV export for applications.
+        </p>
+        <p>
+          <a href="https://github.com/your-username/algogym" target="_blank" rel="noreferrer">GitHub</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>PathFind — shortest path visualizer</h3>
+          <div class="badges">
+            <span>Java</span><span>Dijkstra</span><span>GUI</span>
+          </div>
+        </div>
+        <p class="muted">
+          Visualizes Dijkstra and BFS on grids; demonstrates priority-queue internals and edge cases.
+        </p>
+        <p>
+          <a href="https://github.com/your-username/pathfind" target="_blank" rel="noreferrer">GitHub</a>
+        </p>
+      </article>
+    </section>
+
+    <!-- Experience (optional; 2–4 bullets) -->
+    <section>
+      <h2>Experience</h2>
+      <article class="card">
+        <div class="card-head">
+          <h3>Research Assistant — Robotics Lab</h3>
+          <div class="badges"><span>Python</span><span>ROS</span></div>
+        </div>
+        <ul class="bullets">
+          <li>Built data pipeline (Pandas + FastAPI) to label sensor streams; cut labeling time by 40%.</li>
+          <li>Implemented task queue & retries; improved throughput under load.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Open to Summer 2026 SWE internships. Reach me at <a href="mailto:you@email.com">you@email.com</a>.</p>
+    </section>
+  </main>
+
+  <footer class="container muted small">
+    © <span id="year"></span> Your Name
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
