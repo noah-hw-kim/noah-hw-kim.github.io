@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hyeonwoo Kim — SWE Portfolio</title>
+  <title>Noah (Hyeonwoo) Kim — SWE Portfolio</title>
   <meta name="description" content="Hyeonwoo Kim — CS Master's student, backend & fullstack-focused SWE." />
   <link rel="stylesheet" href="style.css" />
   <!-- Open Graph (nicer link previews) -->
-  <meta property="og:title" content="Hyeonwoo Kim — SWE Portfolio" />
+  <meta property="og:title" content="Noah (Hyeonwoo) — SWE Portfolio" />
   <meta property="og:description" content="Backend (Python/Java), data/ML, and full-stack projects." />
 </head>
 <body>
   <header class="container">
-    <h1>Hyeonwoo Kim</h1>
+    <h1>Noah (Hyeonwoo) Kim</h1>
     <p class="tagline">CS M.S. @ California State University Fullerton • Backend (Python/Java) • Full-stack • ML/AI </p>
     <nav class="links">
-      <a href="mailto:noah.hw.kim@email.com">Email</a>
+      <a href="mailto:noah.hw.kim@gmail.com">Email</a>
       <a href="https://github.com/noah-hw-kim" target="_blank" rel="noreferrer" aria-label="GitHub profile">GitHub</a>
       <a href="https://www.linkedin.com/in/noah-hw-kim" target="_blank" rel="noreferrer">LinkedIn</a>
-      <a href="/assets/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+      <a href="assets/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
     </nav>
   </header>
 
@@ -28,9 +28,9 @@
       <h2>About</h2>
       <p>
         CS M.S. @ California State University, Fullerton (Dec 2026).
-        I build backend and full-stack systems with <strong>Python</strong> and <strong>Java</strong>,
-        and I’m comfortable with <strong>JavaScript/TypeScript</strong> and frontend fundamentals.
-        Recently focused on FastAPI services, async data pipelines, and robotics experiments with ROS 2, OpenCV, and YOLO.
+        I build backend and full-stack systems with <strong>Python</strong> and <strong>Java</strong> (FastAPI, Spring Boot),
+        focusing on <strong>REST APIs</strong>, <strong>databases</strong>, and <strong>cloud deployment</strong> (Docker, GCP).
+        Recent work includes data pipelines (BigQuery) and research systems exposing state APIs for robotics simulation.
       </p>
     </section>
 
@@ -42,23 +42,44 @@
           <div class="badges"><span>Expected Dec 2026</span></div>
         </div>
         <ul class="bullets">
-          <li>Relevant: Algorithms, Databases, Web Backend Engineering, AI/ML, Operating Systems, Network Security</li>
+          <li>Relevant: Algorithms, Software Engineering, Web Back-End Engineering</li>
         </ul>
       </article>
     </section>
 
     <section>
       <h2>Experience</h2>
+      
       <article class="card">
         <div class="card-head">
-          <h3>Analytics Engineering Intern — Green Wave Ingredients</h3>
+          <h3>Teaching Associate — California State University, Fullerton</h3>
+          <div class="badges"><span>SQL</span><span>Database Systems</span></div>
+        </div>
+        <ul class="bullets">
+          <li>Selected as a Teaching Associate for File Structures and Database Systems, leading instruction, grading, exams, and office hours.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Research Assistant — California State University, Fullerton</h3>
+          <div class="badges"><span>Python</span><span>MuJoCo</span><span>APIs</span></div>
+        </div>
+        <ul class="bullets">
+          <li>Built a custom Gymnasium-compatible MuJoCo simulation environment for the Hello Robot Stretch 3, exposing robot and object state APIs for control and learning.</li>
+          <li>Implemented safety-constrained Cartesian end-effector control and environment logic (observations, rewards, resets) to support goal-conditioned reinforcement learning.</li>
+        </ul>
+      </article>
+      
+      <article class="card">
+        <div class="card-head">
+          <h3>Analytics Engineering Intern — Ingredients Online</h3>
           <div class="badges"><span>SQL</span><span>BigQuery</span><span>GTM (JavaScript)</span><span>Google Analytics</span><span>MongoDB</span></div>
         </div>
         <ul class="bullets">
-          <li>Transformed ~30k daily raw events in BigQuery with SQL; improved sign-up funnel tracking via custom GTM JavaScript tags.</li>
-          <li>Designed scalable MongoDB schema for upcoming community feature; modeled 10+ core entities with references/embedding trade-offs.</li>
-          <li>Authored pipeline flowcharts and SOPs to align engineering & marketing stakeholders.</li>
-          <li>Evaluated LLM chatbot options.</li>
+          <li>Engineered analytics-ready event tables in BigQuery by flattening 30K daily raw events with SQL.</li>
+          <li>Implemented custom GTM JavaScript to track banner clicks and full sign-up funnel (start, success, failure, failed step).</li>
+          <li>Designed a MongoDB schema (10+ entities) for a new community feature and authored pipeline SOPs.</li>
         </ul>
       </article>
 
@@ -68,9 +89,7 @@
           <div class="badges"><span>Python</span><span>SAP</span><span>Excel (VBA)</span></div>
         </div>
         <ul class="bullets">
-          <li>Automated 150+ daily refund reconciliations: transformed Citibank reports for SAP import with Python; increased efficiency by ~83%.</li>
-          <li>Consolidated 50+ KPI datasets weekly via Python tooling; reduced reporting time by ~75%.</li>
-          <li>Audited KPI reports to identify recurring issues; coordinated fixes with call-center PM.</li>
+          <li>Automated 150+ daily refund reconciliations with a Python (pandas) script that generated SAP-ready files, improving efficiency by 83 percent.</li>
         </ul>
       </article>
 
@@ -106,8 +125,8 @@
           </div>
         </div>
         <p class="muted">
-          Web app that uploads images, stores metadata, and generates an AI diary using location, weather, and image content.
-          Implemented signed-URL uploads and background jobs. (Next: Ghibli-style image generation; smile classification via OpenCV/ML.)
+          Built a full-stack AI diary app with a FastAPI backend, containerized with Docker and deployed on Google Cloud Run, integrating the Google Gemini API for content generation.
+          Implemented secure JWT authentication with Firebase, Role-Based Access Control (user/admin), and built a real-time dashboard for instant data updates using WebSockets.
         </p>
         <p>
           <a href="https://github.com/noah-hw-kim/smile-snap" target="_blank" rel="noreferrer">GitHub</a>
@@ -130,37 +149,20 @@
           <a href="https://github.com/noah-hw-kim/better-buy" target="_blank" rel="noreferrer">GitHub</a>
         </p>
       </article>
-
-      <article class="card">
-        <div class="card-head">
-          <h3>3D Object Localization on a Mobile Robot</h3>
-          <div class="badges">
-            <span>Python</span><span>ROS 2</span><span>OpenCV</span><span>YOLOv8</span>
-          </div>
-        </div>
-        <p class="muted">
-          Built a 3D perception pipeline with depth camera to localize objects.
-          Resolved a frame mismatch by correcting intrinsics/extrinsics on the fly; stabilized pose estimates across camera motion.
-        </p>
-        <p>
-          <a href="https://github.com/duyhho/stretch_visual_servoing" target="_blank" rel="noreferrer">GitHub</a>
-        </p>
-      </article>
     </section>
 
     <section>
       <h2>Skills</h2>
       <div class="card">
-        <p><strong>Languages:</strong> Python, Java, TypeScript/JavaScript, C++/C (working), SQL</p>
-        <p><strong>Backend:</strong> FastAPI, Spring Boot, MongoDB, Postgres, MySQL, Docker</p>
-        <p><strong>Cloud/Tools:</strong> GCP (GCS/BigQuery), GitHub Actions, Linux, Vercel, JUnit, Postman, VS Code, Jupyter Notebook</p>
-        <p><strong>ML/Robotics:</strong> OpenCV, YOLOv8, ROS 2, Scikit-learn</p>
+        <p><strong>Programming Languages:</strong> Python, Java, JavaScript/TypeScript, C/C++, SQL</p>
+        <p><strong>Frameworks & Libraries:</strong> FastAPI, Spring Boot, React, JUnit, pandas, NumPy, scikit-learn</p>
+        <p><strong>Databases & Cloud/DevOps:</strong> PostgreSQL, MongoDB, Vercel, Docker, GCP, Linux, Git, GitHub Actions</p>
       </div>
     </section>
 
     <section>
       <h2>Contact</h2>
-      <p>Open to Summer 2026 SWE internships. Reach me at <a href="mailto:noah.hw.kim@email.com">noah.hw.kim@email.com</a>.</p>
+      <p>Open to Summer 2026 SWE internships. Reach me at <a href="mailto:noah.hw.kim@gmail.com">noah.hw.kim@gmail.com</a>.</p>
     </section>
   </main>
 
